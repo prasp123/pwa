@@ -1,3 +1,3 @@
 self.addEventListener('push',()=>{
-    self.registration.sendNotification("hello world",{});
+    self.registration.sendNotification('hello world',{});
 })
