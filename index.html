@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="subscribe">subscribe</button>
+    <input type="button" onclick="subscribe()" name="button" value="subscribe"/>
     <script>
         addEventListener('load',async ()=>{
             let sw = await navigator.serviceWorker.register("sw.js");
