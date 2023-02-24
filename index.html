@@ -29,13 +29,15 @@
                // Create a form dynamically
                var form = document.createElement("form");
                form.setAttribute("method", "post");
-               form.setAttribute("action", "/feed");
+               form.setAttribute("action", "http://49.37.160.241:3000/feed");
 
                // create a submit button
                var s = document.createElement("input");
                 s.setAttribute("type", "submit");
                 s.setAttribute("value", "feed");
                 form.appendChild(s);
+             document.getElementsByTagName("body")[0]
+               .appendChild(form);
         }
     </script>
 </body>
