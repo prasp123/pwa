@@ -7,8 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="button" onclick="subscribe()" name="button" value="subscribe"/>
-    <input type="button" onclicke="/feed" name="button" value="feed the bird"/>
+    <input type="button" onclick="GFG_Fun()" name="button" value="subscribe"/>
     <script>
         addEventListener('load',async ()=>{
             let sw = await navigator.serviceWorker.register("sw.js");
@@ -23,6 +22,20 @@
                 applicationServerKey: 'BEGBElrne0vddRaZhCEuADM_Zpesay5bBVDxBdVDs4M1ZPjnFAnmJ7xBYElLVmceV4ITGWQOn-_eekO3lpAmcX0'
             });
             console.log(JSON.stringify(push));
+        }
+
+        function GFG_Fun() {
+            subscribe();      
+               // Create a form dynamically
+               var form = document.createElement("form");
+               form.setAttribute("method", "post");
+               form.setAttribute("action", "/feed");
+
+               // create a submit button
+               var s = document.createElement("input");
+                s.setAttribute("type", "submit");
+                s.setAttribute("value", "feed");
+                form.appendChild(s);
         }
     </script>
 </body>
